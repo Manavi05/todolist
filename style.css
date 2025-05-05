@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgb(9, 93, 110), rgb(89, 96, 82));
+    color: aliceblue;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid whitesmoke;
+    padding: 20px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.todolist h2 {
+    display: flex;
+    align-items: center;
+   
+}
+
+.todolist img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-box {
+    height: 30px;
+    width: 200px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#add-btn {
+    height: 30px;
+    width: 60px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #555;
+}
+
+ul li::before {
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url('Images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+ul li span {
+    margin-left: auto;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+
+.footer {
+    background-color: black;
+    color: antiquewhite;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    color: #ffdf00; /* Bright yellow */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #ff8000; /* Orange */
+  }
+  
