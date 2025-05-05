@@ -3,15 +3,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18.20.5
-   
-    commands:
-        - npm install
-       
+      nodejs: 14
   build:
     commands:
-        # run build script
-        - npm run build
+      - echo "Build step - no build needed for static site"
 artifacts:
   files:
     - '**/*'
